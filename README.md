@@ -6,33 +6,23 @@ Dự án này minh họa **2 cách xác thực cơ bản trong Node.js**:
 
 ---
 
----
-
-## 1. Cách chạy project
-
-| Bước | Code |
-|------|------|
-| Cài thư viện cần thiết | cmd->```npm install``` -> ```npm install express body-parser cookie-parser mongoose```|
-| Chạy server với Basic Auth | cmd->```node basic_auth.js``` |
-| Chạy server với Cookie Auth | cmd->```node cookie_auth.js``` |
+## Test bằng Postman
 
 ---
 
-## 2. Test bằng Postman
-
-### 2.1. Basic Authentication
+### 1. Basic Authentication
 | Mô tả | Code / Thiết lập |
 |-------|------------------|
 | Method | `GET` |
 | URL | `http://localhost:3000` |
-| Authorization | Basic Auth <br> Username: `admin` <br> Password: `12345` |
+| Authorization | Basic Auth Username: `admin` Password: `12345` |
 
 **Kết quả**: Nếu đúng sẽ trả về thông báo xác thực thành công. 
 ![Basic Auth Test](public/results/basic_auth.png)
 
 ---
 
-### 2.2. Cookie Authentication
+### 2. Cookie Authentication
 | Mô tả | Code / Thiết lập |
 |-------|------------------|
 | Chạy server | cmd->``` node cookie_auth.js``` |
