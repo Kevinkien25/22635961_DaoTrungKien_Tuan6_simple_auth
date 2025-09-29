@@ -12,9 +12,9 @@ Dự án này minh họa **2 cách xác thực cơ bản trong Node.js**:
 
 | Bước | Code |
 |------|------|
-| Cài thư viện cần thiết | ```bash<br>npm install<br>``` |
-| Chạy server với Basic Auth | ```bash<br>node basic_auth.js<br>``` |
-| Chạy server với Cookie Auth | ```bash<br>node cookie_auth.js<br>``` |
+| Cài thư viện cần thiết | cmd->```npm install``` -> ```npm install express body-parser cookie-parser mongoose```|
+| Chạy server với Basic Auth | cmd->```node basic_auth.js``` |
+| Chạy server với Cookie Auth | cmd->```node cookie_auth.js``` |
 
 ---
 
@@ -35,14 +35,14 @@ Dự án này minh họa **2 cách xác thực cơ bản trong Node.js**:
 ### 2.2. Cookie Authentication
 | Mô tả | Code / Thiết lập |
 |-------|------------------|
-| Chạy server | ```bash<br>node cookie_auth.js<br>``` |
+| Chạy server | cmd->``` node cookie_auth.js``` |
 
 #### a. Đăng nhập (Login)
 | Mô tả | Code / Thiết lập |
 |-------|------------------|
 | Method | `POST` |
 | URL | `http://localhost:3001/login` |
-| Body (JSON) | ```json<br>{<br>  "username": "admin",<br>  "password": "12345"<br>}<br>``` |
+| Body (JSON) | cmd->```{"username": "admin",  "password":"12345"}``` |
 #### b. Đăng xuất (Logout)
 | Mô tả | Code / Thiết lập |
 |-------|------------------|
@@ -58,6 +58,7 @@ Dự án này minh họa **2 cách xác thực cơ bản trong Node.js**:
 ![Login](public/results/login.png)
 **Kết quả profile khi còn login**: Server trả về `"Welcome user 1, your cookie is valid."`  
 ![profile_login](public/results/profile_login.png)
+
 **Kết quả logout**: Server trả về `"Logged out."`  
 ![Logout](public/results/logout.png)
 **Kết quả profile khi logout**: Server trả về `"Welcome user 1, your cookie is valid."`  
@@ -67,7 +68,7 @@ Dự án này minh họa **2 cách xác thực cơ bản trong Node.js**:
 #### b. Xem cookie trong MongoDB
 | Mô tả | Ví dụ dữ liệu trong DB |
 |-------|-------------------------|
-| Sau khi login, cookie sẽ được lưu trong collection `cookieApp.cookies` | ```json<br>{<br>  "-id": "ObjectID('68d7ad18c6763857897a1e09')",<br>  "cookie_token": "15c16bb9-1db4-4bd5-8033-5469fe377c7d",<br>  "userId": "1",<br>  "userRole": "adsys",<br>  "createdAt": "2025-09-27T09:23:36.962+00:00",<br>  "__v": "0"<br>}<br>``` |
+| Sau khi login, cookie sẽ được lưu trong collection `cookieApp.cookies` | ```"-id": "ObjectID('68d7ad18c6763857897a1e09')",  "cookie_token": "15c16bb9-1db4-4bd5-8033-5469fe377c7d",  "userId": "1",<br>  "userRole": "adsys",  "createdAt": "2025-09-27T09:23:36.962+00:00",<br>  "__v": "0"``` |
 
 **Ảnh show Cookie trong MongoDB**: 
 ![Show Cookie](public/results/show_cookie.png)
@@ -92,5 +93,6 @@ simple_auth/
  └── README.md
 ```
 ## Credit
+
 
 This project was created by [Kevinkien25](https://github.com/Kevinkien25)
