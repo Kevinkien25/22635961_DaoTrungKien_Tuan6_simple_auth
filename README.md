@@ -58,7 +58,6 @@ Dự án này minh họa **2 cách xác thực cơ bản trong Node.js**:
 ![Login](public/results/login.png)
 **Kết quả profile khi còn login**: Server trả về `"Welcome user 1, your cookie is valid."`  
 ![profile_login](public/results/profile_login.png)
-
 **Kết quả logout**: Server trả về `"Logged out."`  
 ![Logout](public/results/logout.png)
 **Kết quả profile khi logout**: Server trả về `"Welcome user 1, your cookie is valid."`  
