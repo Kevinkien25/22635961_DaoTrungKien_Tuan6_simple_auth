@@ -10,9 +10,18 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "cookie-parser": "^1.4.7",
     "express": "^5.1.0",
     "mongoose": "^8.18.2",
     "uuid": "^13.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevinkien25/22635961_DaoTrungKien_Tuan6_simple_auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kevinkien25/22635961_DaoTrungKien_Tuan6_simple_auth/issues"
+  },
+  "homepage": "https://github.com/Kevinkien25/22635961_DaoTrungKien_Tuan6_simple_auth#readme"
 }
